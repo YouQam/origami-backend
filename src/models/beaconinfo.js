@@ -5,6 +5,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const beaconinfoSchema = new Schema({
+    uuid: {
+        type: String,
+        required: true
+    },
     major: {
         type: Number,
         required: true
